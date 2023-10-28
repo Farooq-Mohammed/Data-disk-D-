@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    font-family: KelsonSans, sans-serif;
+}
+.container {
+    padding: 1.8em 1em;
+    width: 300px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.heading {
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.login-section {
+    margin: 15px auto;
+}
+.field-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+.field-section label {
+    color:#333;
+    padding: 8px 6px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.field-section input {
+    grid-column: 2 / 4;
+    padding: 8px 6px;
+    color: #555;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.25s ease;
+}
+.field-section input:focus {
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+.login-btn {
+    margin: 20px 8px 12px;
+    padding: 7px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color:#fff;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background-color: #228ce3;
+}
+.divide-section {
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+}
+.divide-section span {
+    font-size: 18px;
+    color: #555;
+    position: relative;
+}
+.divide-section span::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(134, 134, 134, 0.364);
+    top: 50%;
+    transform: translateX(-115%);
+}
+.divide-section span::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(134, 134, 134, 0.364);
+    top: 50%;
+    transform: translateX(15%);
+}
+.login-apis {
+    padding: 15px 8px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.login-apis > button {
+    padding: 12px 8px;
+    font-size: 14px;
+    border: none;
+    outline: 0.5px solid rgba(0, 0, 0, 0.189);
+    transition: outline 0.175s ease;
+    border-radius: 5px;
+}
+.login-apis > button:hover {
+    outline: 0.5px solid rgba(0, 0, 0, 0.354);
+}

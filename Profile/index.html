@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- LOGO -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" id="logo">
+            <h1 id="text"><span class="sym">&lt</span><span class="F">F</span>arooq<span class="sym">&gt</span></h1>
+            <!-- <h1 id="text-1">Farooq</h1> -->
+          </a>
+          <!-- <img src="./Assests/Images/logo.png" alt="logo" class="logo" /> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Work</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full stack Developer</p>
+          <h1>
+            Hi, I'm <span>Farooq</span><br />
+            Ahmed from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Assests/Images/Coder avatar.jpg" alt="code avatar" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Aspiring Software Engineer with comprehensive training in Java and
+              MERN stack technology, coupled with a profound understanding of
+              data structures and algorithms. Seeking opportunities where I can
+              utilize my skills to further work towards personal and
+              professional development and contribute towards the prosperity of
+              the organization.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onClick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onClick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onClick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-content" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App intefaces</li>
+                <li><span>Web development</span><br />Web app Development</li>
+                <li>
+                  <span>App development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>July 2022 - Current</span><br />Software Engineer at
+                  Persistent Systems
+                </li>
+                <li>
+                  <span>Feb 2022 - July 2022</span><br />Software Engineer
+                  Intern at Persistent Systems
+                </li>
+                <li>
+                  <span>Oct 2021 - Feb 2022</span><br />Student Mentor at Smart
+                  Interviews
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018 - 2022</span><br />b.Tech in Computer Science Engineering
+                </li>
+                <li>
+                  <span>2016 - 2018</span><br />Intermediate in Maths, Physics
+                  and Chemistry
+                </li>
+                <li><span>2016</span><br />SSC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Work exp</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Software Engineer</h2>
+            <p>
+              Developed a web application using the MERN stack to store employee
+              details and integrated the application with backend using NodeJS.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-user-tie"></i>
+            <h2>Student Mentor</h2>
+            <p>
+              Led 300+ students understand and clearing their doubts with the
+              implementation of data structures and algorithm concepts.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-user-tie"></i>
+            <h2>Student Mentor</h2>
+            <p>
+              Led 300+ students understand and clearing their doubts with the
+              implementation of data structures and algorithm concepts.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="./Assests/Images/2.webp" alt="Project 1 - img" />
+            <div class="layer">
+              <h3>Todo app</h3>
+              <p>
+                Todo app lets you manage and organize tasks with real-time
+                collaboration feature.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./Assests/Images/4.jpg" alt="Project 2 - img" />
+            <div class="layer">
+              <h3>Notes app</h3>
+              <p>
+                Notes app is an efficient tool designed to help you organize
+                your thoughts and ideas.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./Assests/Images/4.jpg" alt="Project 2 - img" />
+            <div class="layer">
+              <h3>Music app</h3>
+              <p>
+                Todo app lets you manage and organize tasks with real-time
+                collaboration feature.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact me -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact me</h2>
+            <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fas fa-phone-square"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="./Assests/File/Farooq Resume.pdf"
+              download="Farooq_Resume"
+              class="btn btn-2"
+              ><i class="fa-solid fa-download"></i>RESUME</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                cols="35"
+                rows="6"
+                placeholder="Your Message..."
+              ></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-content");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-content");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwm6-c3BhWWoMIXg7nPfj8uoJh5JyM96uk8uSQ831-7V1Lb6sYO4A4cX50zyH82Pvwr/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(() => {
+              msg.innerHTML = '';
+            }, 5000)
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+  </body>
+</html>

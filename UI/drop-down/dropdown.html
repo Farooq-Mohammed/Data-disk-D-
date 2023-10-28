@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.css">
+    <title>Drop down</title>
+</head>
+<body>
+    <nav>
+        <img src="../Images/logo.jpg" width="120" alt="Logo" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="../Images/Avatar.jpg" alt="Profile" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../Images/Avatar.jpg" alt="Profile" class="user-pic lg">
+                    <h3>Mohd Farooq</h3>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Edit profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+    <script>
+        
+        const menu = document.querySelector(".sub-menu-wrap")
+        function toggleMenu() {
+            console.log('Say Hi');
+            // menu.classList.toggle("open-menu");
+        }
+    </script>
+</html>
